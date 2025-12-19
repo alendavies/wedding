@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Azul y Pablo//Casamiento//ES
+BEGIN:VEVENT
+UID:casamiento-azul-pablo-2026@example.com
+DTSTAMP:20260402T150000Z
+DTSTART:202604027T200000
+DTEND:202604037T020000
+SUMMARY:Casamiento de Azul & Pablo
+DESCRIPTION:Casamiento de Azul y Pablo.\nLugar: Lowlands Club
+LOCATION:Lowlands Club, Blanco Encalada 1201, CABA
+END:VEVENT
+END:VCALENDAR
