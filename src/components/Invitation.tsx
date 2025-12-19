@@ -2,6 +2,28 @@ import React from 'react';
 import Button from './Button';
 import Countdown from './Countdown';
 
+const getCalendarLink = () => {
+    const ua = navigator.userAgent.toLowerCase();
+
+    const title = encodeURIComponent('Boda de Azul & Pablo');
+    const location = encodeURIComponent(
+        'Lowlands Club, Blanco Encalada 1201, CABA'
+    );
+    const details = encodeURIComponent(
+        'Celebración de la boda de Azul y Pablo'
+    );
+
+    const dates = '20260402T170000/20260402T220000';
+
+    // iOS → Apple Calendar (usa .ics)
+    if (/iphone|ipad|ipod/.test(ua)) {
+        return '/fecha.ics';
+    }
+
+    // Android + Desktop → Google Calendar
+    return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${dates}&details=${details}&location=${location}`;
+};
+
 const Invitation: React.FC = () => (
     <section
         className='
@@ -20,14 +42,14 @@ const Invitation: React.FC = () => (
     >
         <h2
             className='
-      font-serif
-      uppercase
-      tracking-[0.45em]
-      text-[14px]
-      md:text-[16px]
-      text-[#2f2f2a]
-      font-medium
-    '
+                font-serif
+                uppercase
+                tracking-[0.45em]
+                text-[14px]
+                md:text-[16px]
+                text-[#2f2f2a]
+                font-medium
+            '
         >
             ¡Estás invitado!
         </h2>
@@ -36,13 +58,13 @@ const Invitation: React.FC = () => (
 
         <p
             className='
-      text-[14px]
-      md:text-[15px]
-      leading-[1.7]
-      text-[#6f6f63]
-      max-w-md
-      mx-auto
-    '
+                text-[14px]
+                md:text-[15px]
+                leading-[1.7]
+                text-[#6f6f63]
+                max-w-md
+                mx-auto
+            '
         >
             Nos encantaría que seas parte de este momento tan especial para
             nosotros.
@@ -52,15 +74,16 @@ const Invitation: React.FC = () => (
 
         <Countdown />
 
-        <a href='/fecha.ics'>
-            <Button
-                className='mt-6'
-                variant='primary'
-                size='md'
-            >
-                Agendar recordatorio
-            </Button>
-        </a>
+        <Button
+            className='mt-6'
+            variant='primary'
+            size='md'
+            onClick={() => {
+                window.open(getCalendarLink(), '_blank', 'noopener,noreferrer');
+            }}
+        >
+            Agregar al calendario
+        </Button>
     </section>
 );
 
