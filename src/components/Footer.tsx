@@ -6,7 +6,8 @@ const Footer: React.FC = () => (
             w-full
             max-w-2xl
             px-8
-            py-24
+            pt-24
+            pb-8
             text-center
             space-y-6
         '
