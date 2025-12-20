@@ -10,9 +10,39 @@ const RSVP: React.FC = () => {
         message: '',
     });
 
-    const handleSubmit = () => {
-        console.log('Form submitted:', { attendance, ...formData });
-        alert('¡Gracias por confirmar tu asistencia!');
+    const handleSubmit = async () => {
+        if (!attendance || !formData.name) {
+            alert('Por favor completá tu nombre y asistencia');
+            return;
+        }
+
+        try {
+            await fetch(
+                'https://script.google.com/macros/s/AKfycbyQx0Ml60moNR8Z4A-rXMkoNz_-g3tUAGH0QRVLMwoMCQ-pL92C3teYEAKhd--7KpIZ/exec',
+                {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        attendance,
+                        ...formData,
+                    }),
+                }
+            );
+
+            setAttendance(null);
+            setFormData({
+                name: '',
+                allergies: '',
+                song: '',
+                message: '',
+            });
+        } catch (error) {
+            alert('Hubo un error. Probá de nuevo más tarde.');
+            console.error(error);
+        }
     };
 
     return (
