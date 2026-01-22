@@ -41,8 +41,9 @@ const Gifts: React.FC = () => (
                 mx-auto
             '
         >
-            Lo más importante es tu presencia, pero si deseás hacernos un
-            regalo, acá te dejamos nuestros datos.
+            Tu presencia es muy importante para nosotros y nos alegra que nos
+            acompañes en este momento. Si deseás hacernos un regalo, aquí te
+            dejamos nuestros datos.
         </p>
 
         {/* CTA */}
