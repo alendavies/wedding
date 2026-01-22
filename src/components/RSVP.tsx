@@ -106,7 +106,7 @@ const RSVP: React.FC = () => {
                         name='attendance'
                         checked={attendance === 'yes'}
                         onChange={() => setAttendance('yes')}
-                        className='accent-[#8f9d87] w-4 h-4'
+                        className='accent-[#8f9d87] w-4 h-4 cursor-pointer'
                     />
                     Sí, ahí voy a estar
                 </label>
@@ -117,7 +117,7 @@ const RSVP: React.FC = () => {
                         name='attendance'
                         checked={attendance === 'no'}
                         onChange={() => setAttendance('no')}
-                        className='accent-[#8f9d87] w-4 h-4'
+                        className='accent-[#8f9d87] w-4 h-4 cursor-pointer'
                     />
                     No voy a poder ir
                 </label>
