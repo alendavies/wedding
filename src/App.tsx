@@ -7,6 +7,7 @@ import Gifts from './components/Gifts';
 import RSVP from './components/RSVP';
 import Footer from './components/Footer';
 import Location from './components/Location';
+import SpotifyPlaylist from './components/SpotifyPlaylist';
 
 const App: React.FC = () => (
     <main className='w-full min-h-screen bg-[#f2f2ef] flex flex-col items-center'>
@@ -23,6 +24,8 @@ const App: React.FC = () => (
         <Gallery />
 
         <Gifts />
+
+        <SpotifyPlaylist />
 
         <Footer />
     </main>
