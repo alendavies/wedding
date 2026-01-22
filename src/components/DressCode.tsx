@@ -6,13 +6,18 @@ const DressCode: React.FC = () => (
             w-full
             max-w-2xl
             px-8
-            py-20
+            pt-6
+            pb-20
             text-center
-            space-y-10
+
         '
     >
         {/* ICONO */}
-        <div className='text-[26px] opacity-70'>👗</div>
+        <img
+            src='/assets/dresscode.png'
+            alt='Dress code'
+            className='w-32 h-32 md:w-40 md:h-40 mx-auto '
+        />
 
         {/* TÍTULO */}
         <h3
@@ -36,7 +41,8 @@ const DressCode: React.FC = () => (
                 md:text-[15px]
                 leading-[1.7]
                 text-[#6f6f63]
-                space-y-3
+                space-y-6
+                mt-6
             '
         >
             <p className='font-serif text-[18px] md:text-[20px] text-[#2f2f2a]'>
