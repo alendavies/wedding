@@ -25,7 +25,7 @@ const Gallery: React.FC = () => (
                 font-semibold
             '
         >
-            Comparte fotos
+            Fotos
         </h3>
 
         {/* TEXTO */}
