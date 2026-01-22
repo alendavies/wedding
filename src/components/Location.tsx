@@ -65,7 +65,7 @@ const Location: React.FC = () => (
                         md:text-[20px]
                     '
                 >
-                    02 ABR
+                    04 ABR
                 </div>
                 <div
                     className='

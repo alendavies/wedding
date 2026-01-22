@@ -13,7 +13,7 @@ const getCalendarLink = () => {
         'Celebración de la boda de Azul y Pablo'
     );
 
-    const dates = '20260402T170000/20260402T220000';
+    const dates = '20260404T170000/20260404T220000';
 
     // iOS → Apple Calendar (usa .ics)
     if (/iphone|ipad|ipod/.test(ua)) {
