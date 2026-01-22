@@ -31,10 +31,18 @@ const Gallery: React.FC = () => {
                     px-8
                     py-20
                     text-center
-                    space-y-10
+                    pb-20
+                    pt-20
                     bg-[#f8f8f8]
                 '
             >
+                {/* ICONO */}
+                <img
+                    src='/photo.png'
+                    alt='Fotos'
+                    className='w-12 h-12 md:w-24 md:h-24 mx-auto'
+                />
+
                 {/* TÍTULO */}
                 <h3
                     className='
@@ -45,6 +53,7 @@ const Gallery: React.FC = () => {
                         md:text-[16px]
                         text-[#2f2f2a]
                         font-semibold
+                        pt-4
                     '
                 >
                     Fotos
@@ -59,6 +68,8 @@ const Gallery: React.FC = () => {
                         text-[#6f6f63]
                         max-w-md
                         mx-auto
+                        pt-8
+                        pb-8
                     '
                 >
                     Subí fotos del casamiento al álbum para que podamos revivir
