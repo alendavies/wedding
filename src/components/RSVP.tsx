@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from './Button';
 
 type Status = 'idle' | 'loading' | 'error';
@@ -14,6 +14,13 @@ const RSVP: React.FC = () => {
         allergies: '',
         message: '',
     });
+
+    useEffect(() => {
+        const alreadySubmitted = localStorage.getItem('rsvp_submitted');
+        if (alreadySubmitted === 'true') {
+            setSubmitted(true);
+        }
+    }, []);
 
     const handleSubmit = async () => {
         setErrorMessage(null);
@@ -144,7 +151,7 @@ const RSVP: React.FC = () => {
 
                 <input
                     className='w-full border border-[#d0d0c8] rounded-xl p-4 text-[14px] focus:outline-none focus:border-[#8f9d87]'
-                    placeholder='Intolerancias o alergias alimentarias'
+                    placeholder='Intolerancias o restricciones alimentarias'
                     value={formData.allergies}
                     onChange={(e) =>
                         setFormData({ ...formData, allergies: e.target.value })
