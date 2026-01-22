@@ -30,17 +30,23 @@ const DressCode: React.FC = () => (
         </h3>
 
         {/* CONTENIDO */}
-        <p
+        <div
             className='
                 text-[14px]
                 md:text-[15px]
                 leading-[1.7]
                 text-[#6f6f63]
+                space-y-3
             '
         >
-            <span className='block text-[#6f6f63]'>Formal</span>
-            ¡Lucí tu mejor look!
-        </p>
+            <p className='font-serif text-[18px] md:text-[20px] text-[#2f2f2a]'>
+                Formal
+            </p>
+
+            <p className='text-[14px] md:text-[15px] leading-[1.7] text-[#6f6f63]'>
+                ¡Lucí tu mejor look!
+            </p>
+        </div>
     </section>
 );
 
