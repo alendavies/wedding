@@ -1,61 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from './Button';
+import BankModal from './BankModal';
 
-const Gifts: React.FC = () => (
-    <section
-        className='
-            w-full
-            max-w-2xl
-            px-8
-            py-20
-            text-center
-            space-y-10
-        '
-    >
-        {/* ICONO */}
-        <div className='text-[26px] opacity-70'>🎁</div>
+const Gifts: React.FC = () => {
+    const [open, setOpen] = useState(false);
 
-        {/* TÍTULO */}
-        <h3
-            className='
-                font-serif
-                uppercase
-                tracking-[0.45em]
-                text-[14px]
-                md:text-[16px]
-                text-[#2f2f2a]
-                font-semibold
-            '
-        >
-            Regalos
-        </h3>
+    return (
+        <>
+            <section className='w-full max-w-2xl px-8 py-20 text-center space-y-10'>
+                <div className='text-[26px] opacity-70'>🎁</div>
 
-        {/* TEXTO */}
-        <p
-            className='
-                text-[14px]
-                md:text-[15px]
-                leading-[1.7]
-                text-[#6f6f63]
-                max-w-md
-                mx-auto
-            '
-        >
-            Tu presencia es muy importante para nosotros y nos alegra que nos
-            acompañes en este momento. Si deseás hacernos un regalo, aquí te
-            dejamos nuestros datos.
-        </p>
+                <h3 className='font-serif uppercase tracking-[0.45em] text-[14px] md:text-[16px] text-[#2f2f2a] font-semibold'>
+                    Regalos
+                </h3>
 
-        {/* CTA */}
-        <div className='pt-2'>
-            <Button
-                variant='primary'
-                size='md'
-            >
-                Ver datos bancarios
-            </Button>
-        </div>
-    </section>
-);
+                <p className='text-[14px] md:text-[15px] leading-[1.7] text-[#6f6f63] max-w-md mx-auto'>
+                    Tu presencia es muy importante para nosotros y nos alegra
+                    que nos acompañes en este momento. Si deseás hacernos un
+                    regalo, aquí te dejamos nuestros datos.
+                </p>
+
+                <div className='pt-2'>
+                    <Button
+                        variant='primary'
+                        size='md'
+                        onClick={() => setOpen(true)}
+                    >
+                        Ver datos bancarios
+                    </Button>
+                </div>
+            </section>
+
+            {open && <BankModal onClose={() => setOpen(false)} />}
+        </>
+    );
+};
 
 export default Gifts;
