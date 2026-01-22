@@ -48,8 +48,7 @@ const Location: React.FC = () => (
             className='
                 text-[16px]
                 md:text-[19px]
-                font-medium
-                text-[#2f2f2a]
+                text-[#6f6f63]
             '
         >
             Lowlands Club

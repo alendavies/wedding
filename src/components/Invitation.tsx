@@ -69,7 +69,7 @@ const Invitation: React.FC = () => (
             Nos encantaría que seas parte de este momento tan especial para
             nosotros.
             <br />
-            <span className='font-medium text-[#2f2f2a]'>¡Falta poco!</span>
+            <span className='text-[#6f6f63]'>¡Falta poco!</span>
         </p>
 
         <Countdown />
