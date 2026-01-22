@@ -26,26 +26,26 @@ const Gallery: React.FC = () => {
         <>
             <section
                 className='
-            w-full
-            max-w-4xl
-            px-8
-            py-20
-            text-center
-            space-y-10
-            bg-[#8f9d87]/10
-        '
+                    w-full
+                    max-w-4xl
+                    px-8
+                    py-20
+                    text-center
+                    space-y-10
+                    bg-[#f8f8f8]
+                '
             >
                 {/* TÍTULO */}
                 <h3
                     className='
-                font-serif
-                uppercase
-                tracking-[0.45em]
-                text-[14px]
-                md:text-[16px]
-                text-[#2f2f2a]
-                font-semibold
-            '
+                        font-serif
+                        uppercase
+                        tracking-[0.45em]
+                        text-[14px]
+                        md:text-[16px]
+                        text-[#2f2f2a]
+                        font-semibold
+                    '
                 >
                     Fotos
                 </h3>
@@ -53,13 +53,13 @@ const Gallery: React.FC = () => {
                 {/* TEXTO */}
                 <p
                     className='
-                text-[14px]
-                md:text-[15px]
-                leading-[1.7]
-                text-[#6f6f63]
-                max-w-md
-                mx-auto
-            '
+                        text-[14px]
+                        md:text-[15px]
+                        leading-[1.7]
+                        text-[#6f6f63]
+                        max-w-md
+                        mx-auto
+                    '
                 >
                     Subí fotos de la boda al álbum para que podamos revivir
                     juntos cada momento.
@@ -74,14 +74,14 @@ const Gallery: React.FC = () => {
                             alt={image.alt}
                             onClick={() => setSelectedImage(i)}
                             className='
-                        w-full
-                        aspect-square
-                        object-cover
-                        rounded-xl
-                        hover:opacity-90
-                        transition-opacity
-                        cursor-pointer
-                    '
+                                w-full
+                                aspect-square
+                                object-cover
+                                rounded-xl
+                                hover:opacity-90
+                                transition-opacity
+                                cursor-pointer
+                            '
                         />
                     ))}
                 </div>
