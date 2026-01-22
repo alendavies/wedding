@@ -12,7 +12,6 @@ const RSVP: React.FC = () => {
     const [formData, setFormData] = useState({
         name: '',
         allergies: '',
-        song: '',
         message: '',
     });
 
@@ -82,7 +81,7 @@ const RSVP: React.FC = () => {
             <p className='text-[14px] md:text-[15px] leading-[1.7] text-[#6f6f63]'>
                 Por favor, confirmá tu asistencia.
                 <br />
-                ¡Esperamos que estés allí!
+                ¡Te esperamos!
             </p>
 
             {/* ERROR MESSAGE */}
@@ -109,7 +108,7 @@ const RSVP: React.FC = () => {
                         onChange={() => setAttendance('yes')}
                         className='accent-[#8f9d87] w-4 h-4'
                     />
-                    Sí, allí estaré
+                    Sí, ahí voy a estar
                 </label>
 
                 <label className='flex items-center gap-3 cursor-pointer text-[14px] text-[#2f2f2a]'>
@@ -120,7 +119,7 @@ const RSVP: React.FC = () => {
                         onChange={() => setAttendance('no')}
                         className='accent-[#8f9d87] w-4 h-4'
                     />
-                    No podré asistir
+                    No voy a poder ir
                 </label>
             </div>
 
@@ -153,15 +152,6 @@ const RSVP: React.FC = () => {
                     }
                 />
 
-                <input
-                    className='w-full border border-[#d0d0c8] rounded-xl p-4 text-[14px] focus:outline-none focus:border-[#8f9d87]'
-                    placeholder='¿Qué canción no puede faltar?'
-                    value={formData.song}
-                    onChange={(e) =>
-                        setFormData({ ...formData, song: e.target.value })
-                    }
-                />
-
                 <textarea
                     className='w-full border border-[#d0d0c8] rounded-xl p-4 text-[14px] focus:outline-none focus:border-[#8f9d87] min-h-30'
                     placeholder='Mensaje para los novios'
@@ -177,7 +167,7 @@ const RSVP: React.FC = () => {
                     size='full'
                     disabled={status === 'loading'}
                 >
-                    {status === 'loading' ? 'Enviando…' : 'Enviar respuesta'}
+                    {status === 'loading' ? 'Enviando…' : 'Enviar'}
                 </Button>
             </div>
         </section>
