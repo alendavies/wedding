@@ -48,7 +48,7 @@ const Invitation: React.FC = () => (
                 text-[14px]
                 md:text-[16px]
                 text-[#2f2f2a]
-                font-medium
+                font-semibold
             '
         >
             ¡Estás invitado!

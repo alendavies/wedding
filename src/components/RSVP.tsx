@@ -74,7 +74,7 @@ const RSVP: React.FC = () => {
     return (
         <section className='w-full max-w-2xl px-8 py-20 space-y-12 bg-white/50 text-center'>
             {/* TÍTULO */}
-            <h3 className='font-serif uppercase tracking-[0.45em] text-[12px] md:text-[14px] text-[#2f2f2a] font-medium'>
+            <h3 className='font-serif uppercase tracking-[0.45em] text-[14px] md:text-[16px] text-[#2f2f2a] font-semibold'>
                 Confirmar asistencia
             </h3>
 

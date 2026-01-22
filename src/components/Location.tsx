@@ -22,10 +22,10 @@ const Location: React.FC = () => (
                 font-serif
                 uppercase
                 tracking-[0.45em]
-                text-[12px]
-                md:text-[14px]
+                text-[14px]
+                md:text-[16px]
                 text-[#2f2f2a]
-                font-medium
+                font-semibold
             '
         >
             Celebración
