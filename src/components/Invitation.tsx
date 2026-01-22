@@ -5,12 +5,12 @@ import Countdown from './Countdown';
 const getCalendarLink = () => {
     const ua = navigator.userAgent.toLowerCase();
 
-    const title = encodeURIComponent('Boda de Azul & Pablo');
+    const title = encodeURIComponent('Casamiento de Azul & Pablo');
     const location = encodeURIComponent(
         'Lowlands Club, Blanco Encalada 1201, CABA'
     );
     const details = encodeURIComponent(
-        'Celebración de la boda de Azul y Pablo'
+        'Celebración del casamiento de Azul y Pablo'
     );
 
     const dates = '20260404T170000/20260404T220000';
