@@ -24,17 +24,17 @@ const BankModal = ({ onClose }: { onClose: () => void }) => {
             onClick={onClose}
         >
             <div
-                className='bg-white max-w-md w-full rounded-2xl p-8 space-y-6 text-center shadow-2xl relative animate-[fadeInScale_0.3s_ease-out]'
+                className='bg-white max-w-md w-full rounded-2xl p-6 md:p-8 space-y-6 text-center shadow-2xl relative animate-[fadeInScale_0.3s_ease-out]'
                 onClick={(e) => e.stopPropagation()}
             >
                 {/* Botón cerrar */}
                 <button
-                    className='absolute top-4 right-4 text-[#6f6f63] hover:text-[#2f2f2a] transition-colors cursor-pointer'
+                    className='absolute top-3 right-3 md:top-4 md:right-4 text-[#6f6f63] hover:text-[#2f2f2a] transition-colors cursor-pointer'
                     onClick={onClose}
                     aria-label='Cerrar'
                 >
                     <svg
-                        className='w-6 h-6'
+                        className='w-5 h-5 md:w-6 md:h-6'
                         fill='none'
                         stroke='currentColor'
                         viewBox='0 0 24 24'
@@ -48,15 +48,15 @@ const BankModal = ({ onClose }: { onClose: () => void }) => {
                     </svg>
                 </button>
 
-                <h4 className='font-serif text-[22px] text-[#2f2f2a]'>
+                <h4 className='font-serif text-[18px] md:text-[22px] text-[#2f2f2a] pr-8'>
                     Datos bancarios
                 </h4>
 
                 <div className='space-y-4'>
                     {/* Pesos */}
-                    <div className='bg-[#f2f2ef] rounded-xl p-5 space-y-3 relative text-center'>
+                    <div className='bg-[#f2f2ef] rounded-xl p-4 md:p-5 space-y-3 relative text-center'>
                         <button
-                            className='absolute top-3 right-3 text-[#6f6f63] hover:text-[#2f2f2a] transition-all cursor-pointer'
+                            className='absolute top-2 right-2 md:top-3 md:right-3 text-[#6f6f63] hover:text-[#2f2f2a] transition-all cursor-pointer'
                             onClick={() => copyToClipboard(aliasPesos, 'pesos')}
                             aria-label='Copiar'
                         >
@@ -90,18 +90,18 @@ const BankModal = ({ onClose }: { onClose: () => void }) => {
                                 </svg>
                             )}
                         </button>
-                        <p className='text-[12px] uppercase tracking-wider text-[#6f6f63]'>
+                        <p className='text-[11px] md:text-[12px] uppercase tracking-wider text-[#6f6f63]'>
                             Pesos
                         </p>
-                        <p className='font-mono text-[17px] text-[#2f2f2a]'>
+                        <p className='font-mono text-[15px] md:text-[17px] text-[#2f2f2a] break-all'>
                             {aliasPesos}
                         </p>
                     </div>
 
                     {/* Dólares */}
-                    <div className='bg-[#f2f2ef] rounded-xl p-5 space-y-3 relative text-center'>
+                    <div className='bg-[#f2f2ef] rounded-xl p-4 md:p-5 space-y-3 relative text-center'>
                         <button
-                            className='absolute top-3 right-3 text-[#6f6f63] hover:text-[#2f2f2a] transition-all cursor-pointer'
+                            className='absolute top-2 right-2 md:top-3 md:right-3 text-[#6f6f63] hover:text-[#2f2f2a] transition-all cursor-pointer'
                             onClick={() => copyToClipboard(aliasUsd, 'usd')}
                             aria-label='Copiar'
                         >
@@ -135,10 +135,10 @@ const BankModal = ({ onClose }: { onClose: () => void }) => {
                                 </svg>
                             )}
                         </button>
-                        <p className='text-[12px] uppercase tracking-wider text-[#6f6f63]'>
+                        <p className='text-[11px] md:text-[12px] uppercase tracking-wider text-[#6f6f63]'>
                             Dólares
                         </p>
-                        <p className='font-mono text-[17px] text-[#2f2f2a]'>
+                        <p className='font-mono text-[15px] md:text-[17px] text-[#2f2f2a] break-all'>
                             {aliasUsd}
                         </p>
                     </div>
