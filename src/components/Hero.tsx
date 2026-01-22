@@ -1,12 +1,12 @@
 import React from 'react';
+import heroImage from '../../assets/hero.jpeg';
 
 const Hero: React.FC = () => (
     <section className='w-full relative'>
         <div
             className='relative h-screen bg-cover bg-center'
             style={{
-                backgroundImage:
-                    "url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2000&auto=format&fit=crop')",
+                backgroundImage: `url(${heroImage})`,
             }}
         >
             <div className='absolute inset-0 bg-black/30' />
