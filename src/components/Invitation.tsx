@@ -34,7 +34,7 @@ const Invitation: React.FC = () => (
             z-20
             px-8
             py-16
-            bg-white
+            bg-[#f8f8f8]
             rounded-t-3xl
             text-center
             space-y-10
