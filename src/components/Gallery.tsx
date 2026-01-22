@@ -20,6 +20,7 @@ const images = [
 
 const Gallery: React.FC = () => {
     const [selectedImage, setSelectedImage] = useState<number | null>(null);
+    const albumUrl = import.meta.env.VITE_PHOTOS_ALBUM;
 
     return (
         <>
@@ -90,8 +91,11 @@ const Gallery: React.FC = () => {
                     <Button
                         variant='primary'
                         size='md'
+                        onClick={() =>
+                            albumUrl && window.open(albumUrl, '_blank')
+                        }
                     >
-                        Subir foto
+                        Subir fotos
                     </Button>
                 </div>
             </section>
