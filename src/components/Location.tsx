@@ -17,20 +17,14 @@ const Location: React.FC = () => (
             Lowlands Club
         </p>
 
+        {/* FECHA Y HORA – UNIFICADO */}
         <div className='flex justify-center gap-16 py-4'>
-            <div className='text-center'>
-                <div className='font-serif text-[18px] md:text-[20px]'>
-                    04 ABR
-                </div>
-                <div className='text-[11px] tracking-widest text-[#6f6f63] mt-1'>
-                    2026
-                </div>
+            <div className='text-center font-serif text-[#2f2f2a]'>
+                <div className='text-[20px] md:text-[22px]'>04 ABR 2026</div>
             </div>
 
-            <div className='text-center'>
-                <div className='font-serif text-[18px] md:text-[20px]'>
-                    17:00
-                </div>
+            <div className='text-center font-serif text-[#2f2f2a]'>
+                <div className='text-[20px] md:text-[22px]'>17:00</div>
             </div>
         </div>
 
