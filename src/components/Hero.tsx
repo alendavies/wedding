@@ -7,7 +7,8 @@ const Hero: React.FC = () => (
             className='relative h-screen bg-cover'
             style={{
                 backgroundImage: `url(${heroImage})`,
-                backgroundPosition: 'center 40%',
+                backgroundPosition:
+                    window.innerWidth < 768 ? '54% 35%' : 'center 40%',
             }}
         >
             <div className='absolute inset-0 bg-black/30' />
