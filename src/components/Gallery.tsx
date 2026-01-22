@@ -61,7 +61,7 @@ const Gallery: React.FC = () => {
                         mx-auto
                     '
                 >
-                    Subí fotos de la boda al álbum para que podamos revivir
+                    Subí fotos del casamiento al álbum para que podamos revivir
                     juntos cada momento.
                 </p>
 
