@@ -16,13 +16,13 @@ const App: React.FC = () => (
 
         <Location />
 
+        <RSVP />
+
         <DressCode />
 
         <Gallery />
 
         <Gifts />
-
-        <RSVP />
 
         <Footer />
     </main>
