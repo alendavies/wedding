@@ -32,12 +32,18 @@ const Location: React.FC = () => (
             Blanco Encalada 1201, CABA
         </p>
 
-        <Button
-            variant='primary'
-            size='md'
+        <a
+            href='https://maps.app.goo.gl/8TxCx5EhhCtBET3x9'
+            target='_blank'
+            rel='noopener noreferrer'
         >
-            Ver ubicación
-        </Button>
+            <Button
+                variant='primary'
+                size='md'
+            >
+                Ver ubicación
+            </Button>
+        </a>
     </section>
 );
 
