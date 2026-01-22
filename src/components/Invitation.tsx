@@ -7,21 +7,34 @@ const getCalendarLink = () => {
 
     const title = encodeURIComponent('Casamiento de Azul & Pablo');
     const location = encodeURIComponent(
-        'Lowlands Club, Blanco Encalada 1201, CABA'
+        'Lowlands Club, Blanco Encalada 1201, CABA',
     );
     const details = encodeURIComponent(
-        'Celebración del casamiento de Azul y Pablo'
+        'Celebración del casamiento de Azul y Pablo',
     );
 
-    const dates = '20260404T170000/20260404T220000';
+    // Google Calendar dates (alineado con el .ics)
+    const dates = '20260404T170000/20260404T022000';
 
-    // iOS → Apple Calendar (usa .ics)
+    // iOS → Apple Calendar (archivo .ics)
     if (/iphone|ipad|ipod/.test(ua)) {
-        return '/fecha.ics';
+        return `${window.location.origin}/fecha.ics`;
     }
 
     // Android + Desktop → Google Calendar
     return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${dates}&details=${details}&location=${location}`;
+};
+
+const handleAddToCalendar = () => {
+    const link = getCalendarLink();
+    const ua = navigator.userAgent.toLowerCase();
+
+    // iOS necesita navegación directa para abrir .ics
+    if (/iphone|ipad|ipod/.test(ua)) {
+        window.location.href = link;
+    } else {
+        window.open(link, '_blank', 'noopener,noreferrer');
+    }
 };
 
 const Invitation: React.FC = () => (
@@ -69,7 +82,7 @@ const Invitation: React.FC = () => (
             Nos encantaría que seas parte de este momento tan especial para
             nosotros.
             <br />
-            <span className='text-[#6f6f63]'>¡Falta poco!</span>
+            ¡Falta poco!
         </p>
 
         <Countdown />
@@ -78,9 +91,7 @@ const Invitation: React.FC = () => (
             className='mt-6'
             variant='primary'
             size='md'
-            onClick={() => {
-                window.open(getCalendarLink(), '_blank', 'noopener,noreferrer');
-            }}
+            onClick={handleAddToCalendar}
         >
             Agregar al calendario
         </Button>
