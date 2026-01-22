@@ -4,9 +4,10 @@ import heroImage from '../../assets/hero.jpeg';
 const Hero: React.FC = () => (
     <section className='w-full relative'>
         <div
-            className='relative h-screen bg-cover bg-center'
+            className='relative h-screen bg-cover'
             style={{
                 backgroundImage: `url(${heroImage})`,
+                backgroundPosition: 'center 40%',
             }}
         >
             <div className='absolute inset-0 bg-black/30' />
