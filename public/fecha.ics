@@ -4,10 +4,10 @@ PRODID:-//Azul y Pablo//Casamiento//ES
 BEGIN:VEVENT
 UID:casamiento-azul-pablo-2026@example.com
 DTSTAMP:20260101T120000Z
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260404T170000
-DTEND;TZID=America/Argentina/Buenos_Aires:20260405T020000
+DTSTART:20260404T200000Z
+DTEND:20260405T050000Z
 SUMMARY:Casamiento de Azul & Pablo
-DESCRIPTION:Casamiento de Azul y Pablo.\nLugar: Lowlands Club
+DESCRIPTION:Casamiento de Azul y Pablo.\\nLugar: Lowlands Club
 LOCATION:Lowlands Club, Blanco Encalada 1201, CABA
 END:VEVENT
 END:VCALENDAR
