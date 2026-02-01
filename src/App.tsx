@@ -8,10 +8,13 @@ import RSVP from './components/RSVP';
 import Footer from './components/Footer';
 import Location from './components/Location';
 import SpotifyPlaylist from './components/SpotifyPlaylist';
+import BackgroundMusic from './components/BackgroundMusic';
 
 const App: React.FC = () => (
     <main className='w-full min-h-screen bg-[#f2f2ef] flex flex-col items-center'>
         <Hero />
+
+        <BackgroundMusic src='/This Will Be.mp3' />
 
         <Invitation />
 
