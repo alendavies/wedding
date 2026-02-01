@@ -14,7 +14,7 @@ const Footer: React.FC = () => (
         <img
             src='/moto.png'
             alt='Moto'
-            className='w-40 h-40 mx-auto object-contain'
+            className='w-32 h-32 mx-auto object-contain'
         />
 
         {/* FRASE */}
