@@ -10,7 +10,7 @@ const SpotifyPlaylist = () => {
                 items-center
                 gap-10
                 px-6
-                pb-20
+                pb-32
                 pt-16
                 md:pb-36
                 md:pt-24
