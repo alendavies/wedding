@@ -4,7 +4,7 @@ PRODID:-//Azul y Pablo//Casamiento//ES
 BEGIN:VEVENT
 UID:casamiento-azul-pablo-2026@example.com
 DTSTAMP:20260101T120000Z
-DTSTART:20260404T200000Z
+DTSTART:20260404T190000Z
 DTEND:20260405T050000Z
 SUMMARY:Casamiento de Azul & Pablo
 DESCRIPTION:Casamiento de Azul y Pablo.\\nLugar: Lowlands Club

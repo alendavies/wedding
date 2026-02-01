@@ -23,7 +23,7 @@ const Location: React.FC = () => (
             </div>
 
             <div className='text-center font-serif text-[#2f2f2a]'>
-                <div className='text-[20px] md:text-[22px]'>17:00</div>
+                <div className='text-[20px] md:text-[22px]'>16:00</div>
             </div>
         </div>
 
