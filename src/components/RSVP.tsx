@@ -101,7 +101,7 @@ const RSVP: React.FC = () => {
                     flex justify-center gap-10 py-4
                     ${
                         status === 'error' && !attendance
-                            ? 'ring-1 ring-[#b4533c]/40 rounded-xl px-4'
+                            ? 'ring-1 ring-white rounded-xl px-4'
                             : ''
                     }
                 `}
@@ -112,7 +112,7 @@ const RSVP: React.FC = () => {
                         name='attendance'
                         checked={attendance === 'yes'}
                         onChange={() => setAttendance('yes')}
-                        className='accent-[#8f9d87] w-4 h-4 cursor-pointer'
+                        className='accent-[#10422b] w-4 h-4 cursor-pointer'
                     />
                     Sí, ahí voy a estar
                 </label>
@@ -123,7 +123,7 @@ const RSVP: React.FC = () => {
                         name='attendance'
                         checked={attendance === 'no'}
                         onChange={() => setAttendance('no')}
-                        className='accent-[#8f9d87] w-4 h-4 cursor-pointer'
+                        className='accent-[#10422b] w-4 h-4 cursor-pointer'
                     />
                     No voy a poder ir
                 </label>

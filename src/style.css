@@ -6,8 +6,8 @@
     --font-script: 'Dancing Script', cursive;
 
     /* Usar con rgb(var(--...)/alpha) en Tailwind */
-    --color-brand: 143 157 135; /* #8f9d87 */
-    --color-brand-hover: 122 138 117; /* #7a8a75 */
+    --color-brand: 16 66 43; /* #10422b */
+    --color-brand-hover: 22 86 56; /* #165638 */
     --color-bg: 242 242 239; /* #f2f2ef */
     --color-surface: 248 248 248; /* #f8f8f8 */
 }
