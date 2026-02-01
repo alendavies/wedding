@@ -47,7 +47,7 @@ const Invitation: React.FC = () => (
             z-20
             px-8
             py-16
-            bg-[#f8f8f8]
+            bg-[rgb(var(--color-surface)/1)]
             rounded-t-3xl
             text-center
             space-y-10
@@ -67,7 +67,7 @@ const Invitation: React.FC = () => (
             ¡Estás invitado!
         </h2>
 
-        <div className='w-10 h-px bg-[#8f9d87]/50 mx-auto' />
+        <div className='w-10 h-px bg-[rgb(var(--color-brand)/0.5)] mx-auto' />
 
         <p
             className='

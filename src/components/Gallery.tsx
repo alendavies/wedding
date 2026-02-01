@@ -33,7 +33,7 @@ const Gallery: React.FC = () => {
                     text-center
                     pb-20
                     pt-20
-                    bg-[#f8f8f8]
+                    bg-[rgb(var(--color-surface)/1)]
                 '
             >
                 {/* ICONO */}

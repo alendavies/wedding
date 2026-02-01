@@ -43,7 +43,7 @@ const Footer: React.FC = () => (
         </p>
 
         {/* DIVISOR SUTIL */}
-        <div className='w-8 h-px bg-[#8f9d87]/40 mx-auto' />
+        <div className='w-8 h-px bg-[rgb(var(--color-brand)/0.4)] mx-auto' />
 
         {/* CRÉDITO */}
         <p

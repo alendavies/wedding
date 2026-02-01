@@ -12,7 +12,7 @@ const SpotifyPlaylist = () => {
                 px-6
                 py-20
                 md:py-28
-                bg-[#f2f2ef]
+                bg-[rgb(var(--color-bg)/1)]
             '
         >
             {/* TÍTULO */}

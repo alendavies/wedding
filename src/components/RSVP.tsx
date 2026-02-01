@@ -46,7 +46,7 @@ const RSVP: React.FC = () => {
                         attendance,
                         ...formData,
                     }),
-                }
+                },
             );
 
             setSubmitted(true);
@@ -54,7 +54,7 @@ const RSVP: React.FC = () => {
         } catch (error) {
             setStatus('error');
             setErrorMessage(
-                'No pudimos enviar tu respuesta. Probá de nuevo en unos minutos.'
+                'No pudimos enviar tu respuesta. Probá de nuevo en unos minutos.',
             );
             console.error(error);
         }
@@ -62,7 +62,7 @@ const RSVP: React.FC = () => {
 
     if (submitted) {
         return (
-            <section className='w-full max-w-2xl px-8 py-32 bg-[#f8f8f8] text-center space-y-6'>
+            <section className='w-full max-w-2xl px-8 py-32 bg-[rgb(var(--color-surface)/1)] text-center space-y-6'>
                 <p className='font-script text-[40px] md:text-[48px] text-[#6f6f63]'>
                     ¡Gracias!
                 </p>
@@ -77,7 +77,7 @@ const RSVP: React.FC = () => {
     }
 
     return (
-        <section className='w-full max-w-2xl px-8 py-20 space-y-12 bg-[#f8f8f8] text-center'>
+        <section className='w-full max-w-2xl px-8 py-20 space-y-12 bg-[rgb(var(--color-surface)/1)] text-center'>
             {/* TÍTULO */}
             <h3 className='font-serif uppercase tracking-[0.45em] text-[14px] md:text-[16px] text-[#2f2f2a] font-semibold'>
                 Confirmar asistencia

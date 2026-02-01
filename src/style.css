@@ -4,6 +4,12 @@
     --font-sans: 'Inter', sans-serif;
     --font-serif: 'Cormorant Garamond', serif;
     --font-script: 'Dancing Script', cursive;
+
+    /* Usar con rgb(var(--...)/alpha) en Tailwind */
+    --color-brand: 143 157 135; /* #8f9d87 */
+    --color-brand-hover: 122 138 117; /* #7a8a75 */
+    --color-bg: 242 242 239; /* #f2f2ef */
+    --color-surface: 248 248 248; /* #f8f8f8 */
 }
 
 @layer base {

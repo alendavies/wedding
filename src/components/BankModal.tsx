@@ -54,7 +54,7 @@ const BankModal = ({ onClose }: { onClose: () => void }) => {
 
                 <div className='space-y-4'>
                     {/* Pesos */}
-                    <div className='bg-[#f2f2ef] rounded-xl p-4 md:p-5 space-y-3 relative text-center'>
+                    <div className='bg-[rgb(var(--color-bg)/1)] rounded-xl p-4 md:p-5 space-y-3 relative text-center'>
                         <button
                             className='absolute top-2 right-2 md:top-3 md:right-3 text-[#6f6f63] hover:text-[#2f2f2a] transition-all cursor-pointer'
                             onClick={() => copyToClipboard(aliasPesos, 'pesos')}
@@ -99,7 +99,7 @@ const BankModal = ({ onClose }: { onClose: () => void }) => {
                     </div>
 
                     {/* Dólares */}
-                    <div className='bg-[#f2f2ef] rounded-xl p-4 md:p-5 space-y-3 relative text-center'>
+                    <div className='bg-[rgb(var(--color-bg)/1)] rounded-xl p-4 md:p-5 space-y-3 relative text-center'>
                         <button
                             className='absolute top-2 right-2 md:top-3 md:right-3 text-[#6f6f63] hover:text-[#2f2f2a] transition-all cursor-pointer'
                             onClick={() => copyToClipboard(aliasUsd, 'usd')}

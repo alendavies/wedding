@@ -40,7 +40,7 @@ const Countdown: React.FC = () => {
                             md:w-18
                             md:h-18
                             rounded-full
-                            bg-[#8f9d87]
+                            bg-[rgb(var(--color-brand)/1)]
                             text-white
                             flex
                             items-center

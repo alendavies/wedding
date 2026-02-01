@@ -9,11 +9,11 @@ export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 
 const variantClasses: Record<NonNullable<ButtonProps['variant']>, string> = {
     primary:
-        'bg-[#8f9d87] text-white hover:bg-[#7a8a75] focus:ring-2 focus:ring-[#8f9d87]/40',
+        'bg-[rgb(var(--color-brand)/1)] text-white hover:bg-[rgb(var(--color-brand-hover)/1)] focus:ring-2 focus:ring-[rgb(var(--color-brand)/0.4)]',
     outline:
-        'bg-white border border-[#8f9d87] text-[#8f9d87] hover:bg-[#f2f2ef]',
-    ghost: 'bg-transparent text-[#8f9d87] hover:underline',
-    icon: 'bg-white border border-[#8f9d87] text-[#8f9d87] hover:bg-[#f2f2ef] focus:ring-2 focus:ring-[#8f9d87]/40',
+        'bg-white border border-[rgb(var(--color-brand)/1)] text-[rgb(var(--color-brand)/1)] hover:bg-[rgb(var(--color-bg)/1)]',
+    ghost: 'bg-transparent text-[rgb(var(--color-brand)/1)] hover:underline',
+    icon: 'bg-white border border-[rgb(var(--color-brand)/1)] text-[rgb(var(--color-brand)/1)] hover:bg-[rgb(var(--color-bg)/1)] focus:ring-2 focus:ring-[rgb(var(--color-brand)/0.4)]',
 };
 
 const sizeClasses: Record<NonNullable<ButtonProps['size']>, string> = {
