@@ -7,7 +7,7 @@ const Gifts: React.FC = () => {
 
     return (
         <>
-            <section className='w-full max-w-2xl px-8 pt-20 text-center pb-20'>
+            <section className='w-full max-w-2xl px-8 pt-18 text-center pb-20'>
                 <img
                     src='/gift.png'
                     alt='Regalo'

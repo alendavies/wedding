@@ -29,7 +29,6 @@ const Gallery: React.FC = () => {
                     w-full
                     max-w-4xl
                     px-8
-                    py-20
                     text-center
                     pb-20
                     pt-20
@@ -98,7 +97,7 @@ const Gallery: React.FC = () => {
                 </div>
 
                 {/* CTA */}
-                <div className='pt-4'>
+                <div className='pt-10'>
                     <Button
                         variant='primary'
                         size='md'
