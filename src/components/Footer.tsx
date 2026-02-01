@@ -5,13 +5,18 @@ const Footer: React.FC = () => (
         className='
             w-full
             max-w-2xl
-            px-8
-            pt-24
             pb-8
             text-center
             space-y-8
         '
     >
+        {/* ICONO */}
+        <img
+            src='/moto.png'
+            alt='Moto'
+            className='w-40 h-40 mx-auto object-contain'
+        />
+
         {/* FRASE */}
         <p
             className='
