@@ -36,10 +36,7 @@ export default function BackgroundMusic({
                 await audio.play();
                 setIsActive(true);
                 removeListeners();
-            } catch {
-                // Si el navegador bloquea el autoplay, dejamos los listeners
-                // para que el usuario pueda volver a intentarlo.
-            }
+            } catch {}
         };
 
         const unlockAudio = () => {
@@ -80,8 +77,9 @@ export default function BackgroundMusic({
             {!isActive && src ? (
                 <div className='fixed top-6 right-6 z-50'>
                     <Button
-                        variant='icon'
-                        aria-label='Activar música'
+                        variant='outline'
+                        size='sm'
+                        className='gap-2'
                         onClick={() => {
                             const audio = audioRef.current;
                             if (!audio) return;
@@ -92,8 +90,9 @@ export default function BackgroundMusic({
                             src='/mirrorball.png'
                             alt=''
                             aria-hidden
-                            className='w-8 h-8 object-contain'
+                            className='w-5 h-5 object-contain'
                         />
+                        <span>Activar música</span>
                     </Button>
                 </div>
             ) : null}
