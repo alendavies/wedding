@@ -1,3 +1,5 @@
+import Button from './Button';
+
 const SpotifyPlaylist = () => {
     return (
         <section
@@ -44,11 +46,25 @@ const SpotifyPlaylist = () => {
                 ¡Agregá tus canciones favoritas!
             </p>
 
+            {/* BOTÓN PARA AGREGAR CANCIONES */}
+            <a
+                href='https://open.spotify.com/playlist/31mh9Qb0oMBQGGgFHdUyJN?si=z-5qWLQXQFq5Sglqwt4fUg&pi=RhSn0h__QvK1N&pt=edb4704610bea460dbb791a324382906'
+                target='_blank'
+                rel='noopener noreferrer'
+            >
+                <Button
+                    variant='primary'
+                    size='md'
+                >
+                    Agregar canciones
+                </Button>
+            </a>
+
             {/* SPOTIFY EMBED */}
 
             <iframe
                 data-testid='embed-iframe'
-                className='border-radius:12px'
+                className='border-radius:12px pointer-events-none'
                 src='https://open.spotify.com/embed/playlist/31mh9Qb0oMBQGGgFHdUyJN?utm_source=generator'
                 width='100%'
                 height='352'
