@@ -10,11 +10,20 @@ const SpotifyPlaylist = () => {
                 items-center
                 gap-10
                 px-6
-                py-20
-                md:py-28
+                pb-20
+                pt-16
+                md:pb-36
+                md:pt-24
                 bg-[rgb(var(--color-bg)/1)]
             '
         >
+            {/* ICONO */}
+            <img
+                src='/mirrorball.png'
+                alt='Música'
+                className='w-12 h-12 md:w-14 md:h-18 mx-auto'
+            />
+
             {/* TÍTULO */}
             <h3
                 className='
