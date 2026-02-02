@@ -48,7 +48,7 @@ const BankModal = ({ onClose }: { onClose: () => void }) => {
                     </svg>
                 </button>
 
-                <h4 className='font-serif text-[18px] md:text-[22px] text-[#2f2f2a] pr-8'>
+                <h4 className='font-serif text-[18px] md:text-[22px] text-[#2f2f2a] text-center px-8'>
                     Datos bancarios
                 </h4>
 
