@@ -9,12 +9,12 @@ const Gifts: React.FC = () => {
         <>
             <section className='w-full max-w-2xl px-8 pt-18 text-center pb-20'>
                 <img
-                    src='/gift.png'
+                    src='/regalos.png'
                     alt='Regalo'
-                    className='w-32 h-32 md:w-45 md:h-45 mx-auto'
+                    className='w-14 h-14 md:w-18 md:h-18 mx-auto'
                 />
 
-                <h3 className='font-serif uppercase tracking-[0.45em] text-[14px] md:text-[16px] text-[#2f2f2a] font-semibold'>
+                <h3 className='font-serif uppercase tracking-[0.45em] text-[14px] md:text-[16px] text-[#2f2f2a] font-semibold pt-10'>
                     Regalos
                 </h3>
 
