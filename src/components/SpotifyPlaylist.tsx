@@ -57,7 +57,7 @@ const SpotifyPlaylist = () => {
 
             {/* BOTÓN PARA AGREGAR CANCIONES */}
             <a
-                href='https://open.spotify.com/playlist/31mh9Qb0oMBQGGgFHdUyJN?si=z-5qWLQXQFq5Sglqwt4fUg&pi=RhSn0h__QvK1N&pt=edb4704610bea460dbb791a324382906'
+                href='https://open.spotify.com/playlist/31mh9Qb0oMBQGGgFHdUyJN?si=-qLH6C36T4iRG5ZzjD1IrA&pi=tIH7XPgHSYGtS&pt=d952b109286b13a03aac8f52be1ec814'
                 target='_blank'
                 rel='noopener noreferrer'
             >
