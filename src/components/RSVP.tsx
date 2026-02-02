@@ -62,7 +62,7 @@ const RSVP: React.FC = () => {
 
     if (submitted) {
         return (
-            <section className='w-full max-w-2xl px-8 py-32 bg-[rgb(var(--color-surface)/1)] text-center space-y-6'>
+            <section className='w-full max-w-2xl px-8 py-20 bg-[rgb(var(--color-surface)/1)] text-center space-y-6'>
                 <p className='font-script text-[40px] md:text-[48px] text-[#6f6f63]'>
                     ¡Gracias!
                 </p>

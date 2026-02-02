@@ -46,7 +46,8 @@ const Invitation: React.FC = () => (
             relative
             z-20
             px-8
-            py-16
+            pt-16
+            pb-20
             bg-[rgb(var(--color-surface)/1)]
             rounded-t-3xl
             text-center

@@ -9,11 +9,8 @@ const SpotifyPlaylist = () => {
                 flex-col
                 items-center
                 gap-10
-                px-6
-                pb-32
-                pt-16
-                md:pb-36
-                md:pt-24
+                px-8
+                py-20
                 bg-[rgb(var(--color-bg)/1)]
             '
         >

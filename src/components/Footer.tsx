@@ -5,6 +5,7 @@ const Footer: React.FC = () => (
         className='
             w-full
             max-w-2xl
+            pt-20
             pb-8
             text-center
             space-y-8

@@ -30,8 +30,7 @@ const Gallery: React.FC = () => {
                     max-w-4xl
                     px-8
                     text-center
-                    pb-20
-                    pt-20
+                    py-20
                     bg-[rgb(var(--color-surface)/1)]
                 '
             >

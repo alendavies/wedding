@@ -6,8 +6,7 @@ const DressCode: React.FC = () => (
             w-full
             max-w-2xl
             px-8
-            pt-12
-            pb-26
+            py-20
             text-center
 
         '
