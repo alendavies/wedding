@@ -21,7 +21,7 @@ const SpotifyPlaylist = () => {
             <img
                 src='/mirrorball.png'
                 alt='Música'
-                className='w-12 h-12 md:w-14 md:h-18 mx-auto'
+                className='w-12 h-16 md:w-14 md:h-18 mx-auto'
             />
 
             {/* TÍTULO */}
