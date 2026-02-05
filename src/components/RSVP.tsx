@@ -78,6 +78,13 @@ const RSVP: React.FC = () => {
 
     return (
         <section className='w-full max-w-2xl px-8 py-20 space-y-12 bg-[rgb(var(--color-surface)/1)] text-center'>
+            {/* ICONO */}
+            <img
+                src='/save the date2.png'
+                alt='Fotos'
+                className='w-18 h-14 md:w-26 md:h-18 mx-auto'
+            />
+
             {/* TÍTULO */}
             <h3 className='font-serif uppercase tracking-[0.45em] text-[14px] md:text-[16px] text-[#2f2f2a] font-semibold'>
                 Confirmar asistencia
