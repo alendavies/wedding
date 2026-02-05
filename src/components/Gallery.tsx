@@ -36,9 +36,9 @@ const Gallery: React.FC = () => {
             >
                 {/* ICONO */}
                 <img
-                    src='/photo.png'
+                    src='/foto.png'
                     alt='Fotos'
-                    className='w-12 h-12 md:w-24 md:h-24 mx-auto'
+                    className='w-18 h-18 md:w-24 md:h-24 mx-auto'
                 />
 
                 {/* TÍTULO */}
