@@ -4,7 +4,7 @@ import Button from './Button';
 const Location: React.FC = () => (
     <section className='w-full max-w-2xl px-8 py-20 bg-[rgb(var(--color-surface)/1)] text-center space-y-10'>
         <img
-            src='/copas.png'
+            src='/copas2.png'
             alt='Ubicación'
             className='w-16 h-16 md:w-20 md:h-20 mx-auto'
         />
