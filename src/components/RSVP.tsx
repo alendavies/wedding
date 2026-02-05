@@ -80,9 +80,9 @@ const RSVP: React.FC = () => {
         <section className='w-full max-w-2xl px-8 py-20 space-y-12 bg-[rgb(var(--color-surface)/1)] text-center'>
             {/* ICONO */}
             <img
-                src='/save the date2.png'
+                src='/envelope.png'
                 alt='Fotos'
-                className='w-18 h-14 md:w-26 md:h-18 mx-auto'
+                className='w-14 h-10 md:w-20 md:h-14 mx-auto'
             />
 
             {/* TÍTULO */}
