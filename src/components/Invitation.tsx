@@ -14,7 +14,7 @@ const getCalendarLink = () => {
     );
 
     // Google Calendar dates (alineado con el .ics)
-    const dates = '20260404T170000/20260504T020000';
+    const dates = '20260404T160000/20260504T020000';
 
     // iOS → Apple Calendar (archivo .ics)
     if (/iphone|ipad|ipod/.test(ua)) {
