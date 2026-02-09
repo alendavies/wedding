@@ -54,7 +54,14 @@ const Footer: React.FC = () => (
                 text-[#9a9a8f]
             '
         >
-            Desarrollado por Alen Davies · 2026
+            Desarrollado por{' '}
+            <a
+                href='mailto:alendavies10@gmail.com'
+                className='hover:underline underline-offset-2'
+            >
+                Alen Davies
+            </a>{' '}
+            · 2026
         </p>
     </section>
 );
